@@ -48,8 +48,8 @@ for step in range(NUM_STEPS):
 
     kf.predict(dt=DT)
     meas_value=real_x + np.random.randn() * np.sqrt(meas_variance)
-    # if step == 1100:
-    #     meas_value =100
+    if step == 1100:
+        meas_value =100
         
     diffValue = abs(meas_value -old_meas_value)
 
