@@ -45,7 +45,7 @@ for step in range(NUM_STEPS):
     real_x = real_x + DT * real_v
  
  
-
+# Kalman filter prediction
     kf.predict(dt=DT)
     meas_value=real_x + np.random.randn() * np.sqrt(meas_variance)
     if step == 1100:
@@ -53,6 +53,7 @@ for step in range(NUM_STEPS):
         
     diffValue = abs(meas_value -old_meas_value)
 
+# Kalman filter measurement update
     if  diffValue < 10:
        if step != 0 and step % MEAS_EVERY_STEPS == 0:
              kf.update(meas_value, meas_variance=meas_variance*1)
