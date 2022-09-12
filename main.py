@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from kf import KF
 
 plt.ion()
-plt.figure()
+#plt.figure()
 
 real_x = 50.0
 meas_variance = 0.001 ** 2
@@ -67,7 +67,7 @@ for step in range(NUM_STEPS):
 
 
 plt.rcParams['figure.figsize']= (4,4)
-plt.rcParams['figure.dpi'] =500
+plt.rcParams['figure.dpi'] =200
 fig, (ax1, ax2) = plt.subplots(2, 1)
 fig.subplots_adjust(hspace=0.5)
 ax1.set_title("Kalman ROCIF masurement")
@@ -95,6 +95,6 @@ ax2.plot(real_time,[mu[1] + 2*np.sqrt(cov[1,1]) for mu, cov in zip(mus,covs)], '
 ax2.plot(real_time,[mu[1] for mu in mus], 'k', linewidth=0.6)
 ax2.set_xlabel('ROCOF')
 
-#plt.ginput(1)
+plt.ginput(1)
 
 
