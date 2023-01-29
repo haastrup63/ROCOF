@@ -65,7 +65,7 @@ for step in range(NUM_STEPS):
     old_meas_value = meas_value
 
 
-
+# plot
 plt.rcParams['figure.figsize']= (4,4)
 plt.rcParams['figure.dpi'] =200
 fig, (ax1, ax2) = plt.subplots(2, 1)
