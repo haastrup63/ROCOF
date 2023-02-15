@@ -29,7 +29,7 @@ real_vs = []
 real_meas_value=[]
 real_time = []
 
-# star Kalman filter
+# start Kalman filter
 for step in range(NUM_STEPS):
     if step <750:
         real_v = 0.0
