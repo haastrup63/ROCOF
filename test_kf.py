@@ -2,9 +2,9 @@ from  kf import KF
 import unittest
 
 import numpy as np
-# Test1
+# Test
 class TestKF(unittest.TestCase):
-
+# Test 1
   def test_can_construct_with_x_and_v(self):
         x = 0.2
         v = 2.3
@@ -14,7 +14,7 @@ class TestKF(unittest.TestCase):
         self.assertAlmostEqual(kf.vel, v)
 
 
-
+# Test 2
   def test_after_calling_predict_mean_and_cov_are_of_right_shape(self):
         x = 0.2
         v = 2.3
@@ -24,7 +24,7 @@ class TestKF(unittest.TestCase):
 
         self.assertEqual(kf.cov.shape, (2, 2))
         self.assertEqual(kf.mean.shape, (2,))
-
+# Test 3
   def test_calling_predict_increases_state_uncertainty(self):
         x = 0.2
         v = 2.3
@@ -38,7 +38,7 @@ class TestKF(unittest.TestCase):
 
             self.assertGreater(det_after, det_before)
         #    print(det_before, det_after)
-       
+   # Test 4   
   def test_calling_update_decreases_state_uncertainty(self):
         x = 0.2
         v = 2.3
