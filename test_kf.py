@@ -24,7 +24,7 @@ class TestKF(unittest.TestCase):
 
         self.assertEqual(kf.cov.shape, (2, 2))
         self.assertEqual(kf.mean.shape, (2,))
-# K
+# KJ
   def test_calling_predict_increases_state_uncertainty(self):
         x = 0.2
         v = 2.3
