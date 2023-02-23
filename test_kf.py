@@ -2,7 +2,7 @@ from  kf import KF
 import unittest
 
 import numpy as np
-# Test1
+# Test 1
 class TestKF(unittest.TestCase):
 
   def test_can_construct_with_x_and_v(self):
@@ -14,7 +14,7 @@ class TestKF(unittest.TestCase):
         self.assertAlmostEqual(kf.vel, v)
 
 
-
+# M
   def test_after_calling_predict_mean_and_cov_are_of_right_shape(self):
         x = 0.2
         v = 2.3
