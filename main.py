@@ -12,7 +12,7 @@ real_v = 0.0
 meas_value = 0
 old_meas_value = 0
 diffValue = 0
-
+#F
 # Initial Kalmanfilter
 kf = KF(initial_x=50.0, initial_v=0.0, accel_variance=0.1)
 
