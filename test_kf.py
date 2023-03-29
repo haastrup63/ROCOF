@@ -14,7 +14,7 @@ class TestKF(unittest.TestCase):
         self.assertAlmostEqual(kf.vel, v)
 
 
-# ABC1S
+# ABC1SPP
   def test_after_calling_predict_mean_and_cov_are_of_right_shape(self):
         x = 0.2
         v = 2.3
