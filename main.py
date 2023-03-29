@@ -45,7 +45,7 @@ for step in range(NUM_STEPS):
     real_x = real_x + DT * real_v
  
  
-# Kalman filter prediction
+# Kalman filter prediction A
     kf.predict(dt=DT)
     meas_value=real_x + np.random.randn() * np.sqrt(meas_variance)
     if step == 1100:
